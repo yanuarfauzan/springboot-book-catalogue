@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="mb-3">
+        <form action="" th:action="@{/book/new}" th:object="${bookForm}" method="POST">
+            <label for="" class="form-label">Title</label>
+            <input type="text" class="form-control" name="" id="" aria-describedby="helpId" placeholder=""
+                th:field="*{title}">
+            <br>
+            <label for="" class="form-label">Author</label>
+            <input type="text" class="form-control" name="" id="" aria-describedby="helpId" placeholder=""
+                th:field="*{author}">
+            <br>
+            <label for="" class="form-label">Description</label>
+            <input type="text" class="form-control" name="" id="" aria-describedby="helpId" placeholder=""
+                th:field="*{description}">
+            <br>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+
+</html>
